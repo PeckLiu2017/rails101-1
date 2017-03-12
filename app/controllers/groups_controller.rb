@@ -46,8 +46,12 @@ end
 
 #to look up
 def show
-  @group = Group.find(params[:id])
-end
+   @group = Group.find(params[:id])
+   @posts = @group.posts
+ end
+
+
+
 
 
 private
